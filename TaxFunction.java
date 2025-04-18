@@ -19,9 +19,9 @@ public class TaxFunction {
 		
 		int tax = 0;
 		
-		if (numberOfMonthWorking > 12) {
-			System.err.println("More than 12 month working per year");
-		}
+		validateMonthsWorked(numberOfMonthWorking);
+
+
 		
 		if (numberOfChildren > 3) {
 			numberOfChildren = 3;
@@ -41,4 +41,10 @@ public class TaxFunction {
 			 
 	}
 	
+        private static void validateMonthsWorked(int numberOfMonthWorking) {
+            if (numberOfMonthWorking > 12) {
+                System.err.println("More than 12 month working per year");
+            }
+        }
+        
 }

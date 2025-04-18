@@ -30,7 +30,7 @@ public class Employee {
 
 	private List<String> childNames = new LinkedList<>();
         private List<String> childIdNumbers = new LinkedList<>();
-
+        // Inline Initilazation refaktoring
 	
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
 		this.employeeId = employeeId;
