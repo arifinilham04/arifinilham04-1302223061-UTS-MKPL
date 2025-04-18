@@ -33,12 +33,7 @@ public class TaxFunction {
 			tax = (int) Math.round(0.05 * (((monthlySalary + otherMonthlyIncome) * numberOfMonthWorking) - deductible - 54000000));
 		}
 		
-		if (tax < 0) {
-			return 0;
-		}else {
-			return tax;
-		}
-			 
+		return Math.max(tax,0);	 
 	}
 	
         private static void validateMonthsWorked(int numberOfMonthWorking) {
