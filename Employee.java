@@ -28,8 +28,9 @@ public class Employee {
 	private String spouseName;
 	private String spouseIdNumber;
 
-	private List<String> childNames;
-	private List<String> childIdNumbers;
+	private List<String> childNames = new LinkedList<>();
+        private List<String> childIdNumbers = new LinkedList<>();
+
 	
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
 		this.employeeId = employeeId;
